@@ -1,0 +1,30 @@
+[2023-12-04 20:24:26] CLIENT [REQUEST] [POST] /note [{'title': 'Hello Wor1232131313ld', 'body': 'new note gug123u'}]
+[2023-12-04 20:24:26] REPLICA [REQUEST] Move item to new primary
+[2023-12-04 20:24:26] REPLICA [REPLY] Move item to new primary
+[2023-12-04 20:24:26] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:26] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:26] CLIENT [REPLY] [POST] /note [{'res': 200}]
+[2023-12-04 20:24:54] CLIENT [REQUEST] [DELETE] /note/1 [{}]
+[2023-12-04 20:24:54] REPLICA [REQUEST] Move item to new primary
+[2023-12-04 20:24:54] REPLICA [REPLY] Move item to new primary
+[2023-12-04 20:24:54] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REQUEST] Tell backups to update
+[2023-12-04 20:24:54] REPLICA [REPLY] Tell backups to update
+[2023-12-04 20:24:54] CLIENT [REPLY] [DELETE] /note/1 [{'res': 200}]
+[2023-12-04 20:25:02] CLIENT [REQUEST] [GET] /note/1 [{}]
+[2023-12-04 20:25:02] CLIENT [REPLY] [GET] /note/1 [{'res': 200, 'note': None}]
+[2023-12-04 20:25:13] CLIENT [REQUEST] [GET] /note [{}]
+[2023-12-04 20:25:13] CLIENT [REPLY] [GET] /note [{'res': 200, 'data': []}]
+[2023-12-04 20:25:26] CLIENT [REQUEST] [GET] /note/1 [{}]
+[2023-12-04 20:25:26] CLIENT [REPLY] [GET] /note/1 [{'res': 200, 'note': None}]
