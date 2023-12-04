@@ -14,3 +14,6 @@ script
 *.rdb
 lander 
 __pycache__/
+log.txt
+*.txt
+log/

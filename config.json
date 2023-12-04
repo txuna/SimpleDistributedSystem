@@ -1,6 +1,6 @@
 {
     "service" : 9988, 
-    "sync" : "local-write", 
+    "sync" : "remote-write", 
     "replicas" : [
         "127.0.0.1:10000", 
         "127.0.0.1:20000",
