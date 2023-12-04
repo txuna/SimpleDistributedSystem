@@ -1,5 +1,5 @@
 # Simple Distributed System
-설정파일에 정의된 API 서버와 연결된 데이터베이스를 PRIMARY BASE를 기반으로 한 분산시스템
+API 서버와 데이터 서버간의 분산처리를 구현한 결과물입니다. 해당 분산구조는 PRIMARY BASE를 기반으로 진행하였으며 Local Write와 Remote Write를 지원합니다.
 
 ## Architecture
 API 서버와 데이터베이스간의 2가지의 동기화 메커니즘을 구현하였습니다. 
@@ -36,6 +36,8 @@ config.json 파일을 편집하여 최대 REPLICA의 갯수 및 포트 설정이
 ```
 
 ```Shell
+git clone https://github.com/txuna/SimpleDistributedSystem.git
+cd SimpleDistributedSystem
 python3 program.py
 ```
 
