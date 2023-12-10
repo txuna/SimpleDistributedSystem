@@ -1,18 +1,28 @@
-from config_parser import load_config
+import json
 from multiprocessing import Process
-import api 
+import api_server
+import time
 
-"""
-run flask api server and replica server using process
-"""
+def load_config(path:str) -> dict:
+    try:
+        with open(path, 'r') as file:
+            data = json.load(file)
+            return data
+        
+    except Exception as e:
+        return None
+    
+
+    
 def run(config:dict):
     p_list = []
     
     for re in config["replicas"]:
-        p = Process(target = api.run, args=(re, config, config["replicas"][0], ))
+        p = Process(target = api_server.run, args=(re, config, ))
         p_list.append(p)
         p.start()
-    
+        time.sleep(1)
+
     for p in p_list:
         p.join()
 
